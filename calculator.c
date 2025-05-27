@@ -169,12 +169,12 @@ static int get_userChoice(char* choice)
 
 	if ((*choice == 'y') || (*choice == 'Y'))
 	{
-		printf("yが選択されました。\n");
+		printf("yまたはYが入力されました。\n");
 		return 0;
 	}
 	else if ((*choice == 'n') || (*choice == 'N'))
 	{
-		printf("nが選択されました。\n");
+		printf("nまたはNが入力されました。\n");
 		return 1;
 	}
 	else
