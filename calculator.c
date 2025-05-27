@@ -27,8 +27,8 @@ static void clear_input_buffer(void);
 //-------------------------------------------------------------------------------
 void Calculator(void)
 {
-	double num1;	//	計算したい値①
-	double num2;	//	計算したい値②
+	double num1;	//	計算したい値1
+	double num2;	//	計算したい値2
 	char symbol = '\0';	//	四則演算使用の演算子種別
 	char choice = '\0';	//	続行可否
 
@@ -121,8 +121,8 @@ static int get_CalcNum(double* num1, double* num2, char* symbol)
 //-------------------------------------------------------------------------------
 //	関数名	：	printCalc
 //	概要	：	計算結果を画面に出力
-//	引数1	：	double num1	-	ユーザーからの入力で取得した1つ目の数値
-//	引数2	：	double num2	-	ユーザーからの入力で取得した2つ目の数値
+//	引数1	：	double num1	-	ユーザーからの入力で取得した1つ目の数
+//	引数2	：	double num2	-	ユーザーからの入力で取得した2つ目の数
 //	引数3	：	char symbol	-	ユーザーからの入力で取得した演算子
 //	戻り値1	：	0	-	正常終了
 //	戻り値2	：	-1	-	異常終了
