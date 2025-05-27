@@ -34,5 +34,6 @@ gcc main.c calculator.c -o calculator
 
 - This project is for learning purposes.
 - No further updates are planned.
-
 ---
+
+[Click here for the Japanese README](README.ja.md)
