@@ -14,14 +14,44 @@
 以下のコマンドでコンパイルできます：
 
 ```bash
-gcc main.c calculator.c -o calculator
+gcc main.c calculator.c -o simple-c-calculator
 ```
+---
+
+## 注意事項 (使用環境)
+
+このプログラムは`scanf_s`を使用しており、
+**Visual Studio 2022などのWindows環境**でのビルドを想定しています。
+GCCやClangを使う他の環境では```scanf_s```はサポートされていないため、
+置き換える必要があります
+
+---
+
+## 他の環境でビルドするには？
+
+Visual studio以外の環境(GCCやClangなど)では、
+`scanf_s` を標準の `scanf` に置き換えてください。
+
+例：
+```c
+//	数値入力の場合 (double型など)
+scanf_s("%lf", num);	//	Visual Studio
+↓
+scanf("%lf", num);		//	標準C
+
+//	文字の読み取りなど、バッファ操作が必要な場合
+sscanf_s(buffer, "%c", symbol, 1);
+↓
+sscanf(buffer, "%c", symbol);
+
+```
+
 ---
 
 ## 実行方法
 
 ```
-./calculator
+./simple-c-calculator
 ```
 ---
 

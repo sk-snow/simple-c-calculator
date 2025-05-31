@@ -26,6 +26,7 @@
     <ClInclude Include="caluclator.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="README.ja.md" />
     <None Include="README.md" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
